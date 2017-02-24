@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hola Javascript</title>
+</head>
+<body>
+    <h1>Hola mundo en Javascript</h1>
+    <script>
+        // window.alert("Hola Javascript")
+        // var nombre = window.prompt("Cual es tu nombre")
+        // window.confirm("Hola " + nombre + " ¿quieres aprender JS?")
+        window.document.write('<h1 style="color:red;">Me gusta Javascript</h1>')
+        console.log("Hola consola")
+
+        var lenguajes = ['html', 'CSS', 'Javascript', 'PHP']
+
+        window.document.write('<table>')
+        for (var step = 0; step<lenguajes.length;step++)
+        {
+            window.document.write('<tr>')
+            window.document.write('<td style = "border:solid">')
+            document.write(lenguajes[step])
+            window.document.write('</td>')
+            window.document.write('</tr>')
+        }
+        window.document.write('<table>')
+    </script>
+</body>
+</html>
