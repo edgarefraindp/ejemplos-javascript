@@ -6,7 +6,6 @@
 </head>
 <body>
     <!--1  2  3  4  5  6  7  8  9
-        --------------------------
     1 | 1  2  3  4  5  6  7  8  9
     2 | 2  4  6  8  10
     3 |
@@ -18,5 +17,32 @@
     9 |
     Se crean 2 funciones; una para crear la tabla y otra para imprimirle
     -->
+    <h1>Tablas de Múltiplicar</h1>
+    <script>
+    function Tabla()
+    {
+        this.dimencion = window.prompt('¿Dimencion máxima?')
+       
+        var arreglo = [[]]
+        arreglo[0][0] = 'X'
+        console.log(this.dimencion + '\n')
+        for(var step = 1; step <= this.dimencion; step++)
+        {
+            arreglo[0][step] = step;
+            arreglo[step][0] = step;
+                                console.log(arreglo + '\n')
+        }
+        arreglo.forEach(function(renglon, stepR = 1, arr)
+        {
+            renglon.forEach(function(columna, stepC = 1, arreglo)
+            {
+                columna = renglon[0] * arreglo[0][stepC]
+                console.log(columna + '\n')
+            })
+        })
+    }
+
+    var tabla = new Tabla()
+    </script>
 </body>
 </html>
