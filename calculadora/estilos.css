@@ -1,0 +1,24 @@
+*
+{
+    width: 30px;
+    height: 30px;
+    padding: 1px;
+}
+.pantalla{
+    width: 135px;
+    height: 40px;
+
+    background:  lightskyblue;
+    border: solid 1.5px;
+    
+}
+.numero{
+    background: lightcyan;
+}
+.operador{
+    background: lightgreen;
+    
+}
+.borrar{
+    background: red;
+}
